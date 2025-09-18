@@ -1,0 +1,72 @@
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+ 
+}
+
+h1 {
+  font-size: 3.2em;
+  font-family: Garamond, serif;
+  line-height: 1.1;
+  color:rgb(189, 180, 108)
+  
+}
+
+img {
+  height: 500px;
+  width: 100%;
+  outline-style: double;
+  outline-width: thick;
+   outline-color: rgb(255, 245, 164);
+
+}
+
+h2 {
+    font-size: 2.5em;
+  line-height: 1.1;
+  color:rgb(77, 117, 84)
+
+
+}
+h3 {
+  font-size: 2.2em;
+  font-family: Garamond, serif;
+  line-height: 1.1;
+  color:rgb(189, 180, 108)
+}
+h4 {
+  font-size: 3.2em;
+  font-family: Garamond, serif;
+  font-weight: bold;
+  line-height: 1.1;
+  color:rgb(77, 117, 84)
+}
+
+header {
+  background-position: left;
+  height: 100%;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-color: rgb(249, 253, 178);
+  background-image: url("C:\Users\ADMIN\Desktop\protons\TASK6\REACT\app\src\assets\vitalnest.jpg");
+  padding: 10px;
+  font-size: 3.0em;
+  font-weight: bold;
+  line-height: 1.1;
+  color:rgb(116, 119, 44)
+  
+}
+@media(max-width:768px){
+  header{
+    height: 70vh;
+    padding: 20vh;
+    text-align: center;
+  }
+}
+
