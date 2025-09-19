@@ -1,0 +1,103 @@
+/* Container */
+.task-page {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.task-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Progress Bar Track */
+.progress-track {
+  width: 100%;
+  height: 16px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+/* Progress Bar Fill */
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4cafef, #2b82f6);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Progress Percent Text */
+.percent {
+  text-align: right;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background 0.2s ease-in-out;
+}
+
+.task-list li:hover {
+  background: #f1f1f1;
+}
+
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.task-list li.done {
+  text-decoration: line-through;
+  color: #777;
+  background: #eaeaea;
+}
+
+/* Level Section */
+.level-box {
+  margin-top: 20px;
+  text-align: center;
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.level-box p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.level-box button {
+  background: #2b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease-in-out;
+}
+
+.level-box button:hover {
+  background: #1e66c8;
+}
