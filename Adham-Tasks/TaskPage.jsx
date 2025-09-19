@@ -1,20 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./TasksPage.css";
-
-const getItem = (key) => {
-  try {
-    const value = localStorage.getItem(key);
-    return value ? JSON.parse(value) : null;
-  } catch {
-    return null;
-  }
-};
-
-const setItem = (key, value) => {
-  try {
-    localStorage.setItem(key, JSON.stringify(value));
-  } catch {}
-};
+import {getItem,setItem} from "./localstorage.tsx"
 
 const TasksPage = () => {
 
@@ -95,3 +81,4 @@ const TasksPage = () => {
 };
 
 export default TasksPage;
+
