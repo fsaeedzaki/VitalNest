@@ -1,0 +1,40 @@
+html, body, #root { height: 200%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1;
+  color: #3f6446;
+  background: #fffbe3;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.page {
+  min-height: 100dvh;    
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+}
+.page__footer {
+  border-top: 1px solid #a9d0af;
+  text-align: center;
+  border-bottom: none;
+  padding: 1rem;
+}
+
+.page__content {
+  padding: 1rem;
+  display: grid;
+  place-items: left;
+}
+
+.card {
+  width: min(1815px, 10000vw);
+  background: #fffacf;
+  border-radius: 80px;
+  padding: 2rem;
+  box-shadow: 0 1px 20px #00000033;
+}
+
+.card h2 { margin-top: 0; }
+
