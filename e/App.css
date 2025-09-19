@@ -1,0 +1,14 @@
+html, body, #root { height: 200%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1;
+  color: #3f6446;
+  background: #fffbe3;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
