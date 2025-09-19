@@ -1,6 +1,10 @@
 
+
 .task-page {
   max-width: 500px;
+  margin: 120px auto;
+  padding: 100px;
+  background: #fffacf;
   margin: 120px auto;
   padding: 100px;
   background: #fffacf;
@@ -13,11 +17,14 @@
   text-align: center;
   margin-bottom: 20px;
   color: linear-gradient(90deg, #9dff00, #2b82f6);;
+  color: linear-gradient(90deg, #9dff00, #2b82f6);;
 }
+
 
 
 .progress-track {
   width: 100%;
+  height: 32px;
   height: 32px;
   background: #eee;
   border-radius: 10px;
@@ -26,11 +33,14 @@
 }
 
 
+
 .progress-fill {
   height: 100%;
   background: linear-gradient(90deg, #9dff00, #2b82f6);
+  background: linear-gradient(90deg, #9dff00, #2b82f6);
   transition: width 0.3s ease-in-out;
 }
+
 
 
 .percent {
@@ -39,6 +49,7 @@
   color: #444;
   margin-bottom: 20px;
 }
+
 
 
 .task-list {
@@ -53,6 +64,7 @@
   padding: 8px 12px;
   margin-bottom: 8px;
   border-radius: 8px;
+  background: #00ffff;
   background: #00ffff;
   transition: background 0.2s ease-in-out;
 }
@@ -69,7 +81,10 @@
 .task-list li.done {
   color: #156829;
   background: #00ffbf;
+  color: #156829;
+  background: #00ffbf;
 }
+
 
 
 .level-box {
@@ -84,5 +99,7 @@
   margin-bottom: 10px;
   font-weight: bold;
 } 
+} 
+
 
 
