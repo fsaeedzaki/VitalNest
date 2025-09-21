@@ -24,11 +24,13 @@
 
 .card {
   background: #fffacf;
+  text-decoration: #25482c;
   border-radius: 80px;
   padding: 2rem;
   box-shadow: 0 1px 20px #00000033;
   max-width: 800px;
   width: 100%;
+  -webkit-text-fill-color: #2c5334;
 }
 
 .card h1 { 

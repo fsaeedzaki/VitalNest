@@ -61,7 +61,7 @@ const TasksPage = () => {
 
   return (
     <div className="task-page">
-      <h2>My Tasks</h2>
+      <h2 className="mytaskspage">My Tasks</h2>
 
 
       <div

@@ -1,15 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
-/* Use specific class selector instead of generic button */
 .info-btn {
     position: relative;
     border: 2px solid #4d7554;
     background-color: #fff5a4;
-   width: 210px;             
-    height: 90px;            
+    width: 210px;             
+    height: 90px;
     border-radius:  45%; 
-    transition: all 0.3s  ease;   
+    transition: all 0.3s  ease-out;   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,19 +26,19 @@
     font-family: 'Merriweather', serif;
 }
 .info-btn:hover {
-  background-color: #ffffff; 
-  transform: scale(1.05);      
+   background-color: #233627; 
+   transform: scale(1.05);      
    width: 250px;             
     height: 500px;            
     border-radius:  45%;  
     transition: all 0.3s  ease; 
-     background-color: #fff5a4;   
+     background-color: #fff6b0;   
 }
 .info-btn:hover .default{
     align-items: flex-start;
 }
 .info-btn:hover .hover-text{
- opacity: 1;
+    opacity: 1;
 }
 .info-btn:hover .default{
     opacity: 0;

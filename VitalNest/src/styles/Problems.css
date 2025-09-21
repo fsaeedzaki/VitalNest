@@ -1,10 +1,40 @@
-.buttons{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-    flex-wrap: wrap;              
-    width: 98%;                 
-    padding: 0 0px;              
 
+.problems__page {
+  min-height: 100vh;    
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  width: 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.problems__content {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.problems__card {
+  background: #fffacf;
+  text-decoration: #25482c;
+  border-radius: 80px;
+  padding: 2rem;
+  box-shadow: 0 1px 20px #00000033;
+  max-width: 800px;
+  width: 100%;
+  -webkit-text-fill-color: #2c5334;
+}
+
+.problems__card h1 { 
+  margin-top: 0; 
+  font-size: 2rem;
+  text-align: right;
+}
+
+.problems__card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
 }

@@ -2,12 +2,15 @@
   width: 100%;
   min-height: 100vh;
 }
-
-/* Fixed navbar styles */
+.body{
+  background-color: white; 
+}
 .App {
+  background-image: "./assets/FINALLLLL.webp";
   position: relative;
   width: 100%;
   min-height: 100vh;
+
 }
 
 .App nav {
@@ -39,9 +42,8 @@
   background-color: #f0f0f0;
 }
 
-/* Add top margin to content to account for fixed navbar */
 .content {
-  margin-top: 80px; /* Adjust this value based on your navbar height */
+  margin-top: 80px;
   padding: 1rem;
 }
 
@@ -74,7 +76,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .read-the-docs {

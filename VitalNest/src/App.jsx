@@ -9,28 +9,28 @@ import Tips from "./pages/Tips.jsx";
 function App (){
   return(
     
-    <div className="App">
-      
-    <BrowserRouter>
-      <nav>
-        <Link to="/Home"> Home </Link>
-        <Link to="/milestones"> Milestones </Link>
-        <Link to="/problems"> Problems </Link>
-        <Link to="/tips"> Tips </Link>
-        {/* <Link to="/About"> About </Link> */}
-        {/* Add more navigation links here */}
-      </nav>
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<Welcome/>}/>
-          <Route path="/Home" element={<Home/>}/>
-          <Route path="/milestones" element={<TasksPage/>}/>
-          <Route path="/problems" element={<Problems/>}/>
-          <Route path="/tips" element={<Tips/>} />
-        </Routes>
+      <div className="App">
+        
+      <BrowserRouter>
+        <nav>
+          <Link to="/Home"> Home </Link>
+          <Link to="/milestones"> Milestones </Link>
+          <Link to="/problems"> Problems </Link>
+          <Link to="/tips"> Tips </Link>
+          {/* <Link to="/About"> About </Link> */}
+          {/* Add more navigation links here */}
+        </nav>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Welcome/>}/>
+            <Route path="/Home" element={<Home/>}/>
+            <Route path="/milestones" element={<TasksPage/>}/>
+            <Route path="/problems" element={<Problems/>}/>
+            <Route path="/tips" element={<Tips/>} />
+          </Routes>
+        </div>
+      </BrowserRouter>
       </div>
-    </BrowserRouter>
-    </div>
   );
 }
 export default App;
