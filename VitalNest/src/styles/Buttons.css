@@ -5,10 +5,10 @@
 }
 
 .sidebar {
-  background: #fffced;
   color: #fffef3;
   padding: 1rem;
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
@@ -19,9 +19,13 @@
 }
 
 .sidebar-btn {
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff8bd;
   color: #4d7554;
-  padding: 0rem 0rem;
   border: none;
   border-radius: 75px;
   cursor: pointer;

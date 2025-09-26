@@ -11,7 +11,7 @@ export default function Buttons() {
 
   return (
     <main className="page">
-      <aside className="sidebar">
+      <div className="sidebar">
         {buttons.map((title, index) => (
           <div key={index} className="sidebar-item">
             <button
@@ -34,7 +34,7 @@ export default function Buttons() {
             )}
           </div>
         ))}
-      </aside>
+      </div>
     </main>
   );
 }
