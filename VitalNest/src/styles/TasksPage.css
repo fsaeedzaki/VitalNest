@@ -3,7 +3,7 @@ body {
 }
 
 .task-page {
-  max-width: 500px;
+  width: 600px;
   margin: 120px auto;
   padding: 100px;
   background: #fffacf;
