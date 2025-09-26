@@ -10,7 +10,7 @@ export default function Buttons() {
   ];
 
   return (
-    <main className="page">
+    <main className="buttons_container">
       <div className="sidebar">
         {buttons.map((title, index) => (
           <div key={index} className="sidebar-item">

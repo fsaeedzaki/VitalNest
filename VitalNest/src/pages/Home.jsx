@@ -2,7 +2,7 @@ import Homepage from "../components/Homepage.jsx"
 import doctors from "../assets/doctors.png"
 import heart from "../assets/heart.jpg"
 import yd from "../assets/yd.jpg"
-import '../styles/Home.css'
+import '../styles/home.css'
 function Home({}){
     return(
         <div>

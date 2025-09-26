@@ -6,6 +6,7 @@ export default function Tips(){
           
       <section className="page__content">
         <div className="card">
+          <div className = "background"/>
           <div className="myAnimation"/>
           <h1>Health tips from VitalNest</h1>
           <p>
