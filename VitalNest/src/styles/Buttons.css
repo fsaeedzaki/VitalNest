@@ -1,4 +1,3 @@
-
 .page {
   width: 98.5vw;
   height: 300dvh;
@@ -29,7 +28,6 @@
   border: none;
   border-radius: 75px;
   cursor: pointer;
-  font-weight: 600;
   transition: background 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   width: 100%;
@@ -40,19 +38,8 @@
   box-shadow: 0 0 10px #4d7554;
 }
 
-.sidebar-btn .arrow {
-  opacity: 0;
-  transform: translateX(-5px);
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.sidebar-btn:hover .arrow {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .sidebar-content {
-  background: #4d7554;
+  background: #7aab83;
   padding: 0.75rem;
   border-radius: 0 0 16px 16px;
   gap: 0.5rem;

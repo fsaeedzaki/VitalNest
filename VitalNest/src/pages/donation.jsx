@@ -10,8 +10,8 @@ export default function DonationPage() {
   return (
     <div className="donation-container">
       <div className="donation-card">
-        <h1>support our initiative</h1>
-        <p>donation for better future</p>
+        <h1>Support our Initiative!</h1>
+        <p>Donation for a better future</p>
 
         <div className="amounts">
           <button onClick={() => handleDonate(50)}>50 EGP</button>
@@ -20,7 +20,7 @@ export default function DonationPage() {
         </div>
 
         <button className="donate-btn" onClick={() => handleDonate(0)}>
-         donate now
+         Donate now!
         </button>
       </div>
     </div>
