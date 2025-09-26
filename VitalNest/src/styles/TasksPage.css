@@ -3,12 +3,10 @@ body {
 }
 
 .task-page {
-  max-width: 500px;
-  margin: 120px auto;
-  padding: 100px;
+  width: 600px;
   background: #fffacf;
   margin: 120px auto;
-  padding: 100px;
+  padding: 80px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,20 +19,14 @@ body {
   color: linear-gradient(90deg, #4e7a4a, #2b82f6);;
 }
 
-
-
 .progress-track {
   width: 100%;
-  height: 32px;
   height: 32px;
   background: #eee;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 8px;
-
 }
-
-
 
 .progress-fill {
   height: 100%;
@@ -42,16 +34,12 @@ body {
   transition: width 0.3s ease-in-out;
 }
 
-
-
 .percent {
   text-align: right;
   font-size: 14px;
   color: #000000;
   margin-bottom: 20px;
 }
-
-
 
 .task-list {
   list-style: none;
@@ -85,8 +73,6 @@ body {
   color: #156829;
   background: #00ffbf;
 }
-
-
 
 .level-box {
   margin-top: 20px;
