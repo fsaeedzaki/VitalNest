@@ -4,12 +4,9 @@ body {
 
 .task-page {
   width: 600px;
-  width: 600px;
-  margin: 120px auto;
   padding: 100px;
   background: #fffacf;
-  margin: 120px auto;
-  padding: 80px;
+  padding: 100px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

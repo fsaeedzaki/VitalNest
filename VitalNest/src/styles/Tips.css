@@ -1,12 +1,14 @@
-.page {
-  min-height: 100vh;    
-  display: grid;
-  grid-template-rows: auto 1fr auto; 
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: center;
+.background {
+  background-image: url('https://thumbs.dreamstime.com/b/watercolor-background-green-yellow-blue-colors-raster-abstract-illustration-hand-drawn-gradient-painting-gray-171412473.jpg');
+  /* background-image: "./assets/doctors.png"; */
+}
   
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  align-items: center;
+  max-height: fit-content;  
 }
 
 .page__footer {
@@ -18,12 +20,12 @@
 
 .page__content {
   padding: 2rem 1rem;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
 
-.card {
+.card { 
   background: #fffacf;
   align-items: center;
   text-decoration: #25482c;
