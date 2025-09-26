@@ -4,7 +4,7 @@ import TasksPage from "./pages/TaskPage.jsx";
 import Problems from "./pages/Problems.jsx";
 import Welcome from "./pages/Welcome.jsx";
 import './App.css';
-import Tips from "./pages/Tips.jsx";
+import Tips from "./pages/Tips.jsx"; 
 
 function App (){
   return(

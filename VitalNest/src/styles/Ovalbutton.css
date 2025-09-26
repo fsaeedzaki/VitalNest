@@ -13,8 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: #25482c;
-    -webkit-text-fill-color: #2c5334;
+    text-decoration: #4d7554;
+    -webkit-text-fill-color: #4d7554;
     margin: 10px;
 
 } 
@@ -36,7 +36,7 @@
    transform: scale(1.05);      
    width: 250px;             
    height: 500px;    
-   border-color: #25482c;        
+   border-color: #325a3a;        
    border-radius:  45%;  
    transition: all 0.3s  ease; 
    background-color: #fffacf;   

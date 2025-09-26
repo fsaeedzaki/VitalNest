@@ -16,13 +16,13 @@ function Problems() {
       </section>
       <div className='ovalButtons'>
         <OvalButton name="Mental" desc="Mental Illness
-            affect thoughts,emotions and behavior also can be shown as (depression,anxiety) to get better you need help like parents support and if the situation is more difficult, you can definitely consult a doctor."/>
+            affect thoughts, emotions and behavior also can be shown as (depression, anxiety). To get better you need help like parents support - and if the situation is more critical, you can definitely consult a doctor."/>
         <OvalButton name="Physical" desc="Physical Illness 
-        affect the body  and its systems, it appears on the body in more than one form like (diabetes, asthema,cancer)."/>
+        affects the body and its systems, it appears on the body in more than one forms - like (diabetes, asthema, cancer)."/>
         <OvalButton name="Psychosomatic Illness" desc="Psychosomatic Illness
-            its a Physical symptons caused or worsened by mental or emotional factors like (stress, tension headaches) ."/>
+            It's a Physical symptom caused or worsened by mental or emotional factors like (stress, tension, headaches) ."/>
          <OvalButton name="Social" desc="Social Illness
-            it affect relationships, social functioning, or spread through society. here is some exampels like (addiction,sregma related conditions)."/>
+            It's caused by external problems like relationships, social functioning, or spread through society - (addiction, sregma related conditions)."/>
       </div>
       </div>
   )
