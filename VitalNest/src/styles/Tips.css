@@ -5,7 +5,8 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  align-items: center;
+  
 }
 
 .page__footer {
@@ -19,11 +20,12 @@
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .card {
   background: #fffacf;
+  align-items: center;
   text-decoration: #25482c;
   border-radius: 80px;
   padding: 2rem;

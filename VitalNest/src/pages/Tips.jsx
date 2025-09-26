@@ -2,8 +2,8 @@ import '../styles/Tips.css'
 import Buttons from '../components/Buttons.jsx'
 export default function Tips(){
     return(
-        <main className="page">
-
+    <main className="page">
+          
       <section className="page__content">
         <div className="card">
           <div className="myAnimation"/>
@@ -13,6 +13,7 @@ export default function Tips(){
           </p>
         </div>
       </section>
+      <Buttons/>
       <footer className="page__footer">
         <small>©2025 Made By Farida Saeed</small>
       </footer>
