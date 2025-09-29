@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const API_URL = "https://api.openai.com/v1/chat/completions";
-const API_KEY = "<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>"; // Replace with your actual API key
+const API_URL = "https://api.groq.com/openai/v1/chat/completions";
+const API_KEY = "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";
 
 function Bot() {
     const [messages, setMessages] = useState([
-        { sender: "bot", text: "Hello! How can I help you today?" }
+        { role: "assistant", content: "Hello! I'm VitalNest's health assistant. I can help with general health tips, nutrition, exercise, and wellness. What's on your mind?" }
     ]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
@@ -14,58 +14,85 @@ function Bot() {
         e.preventDefault();
         if (!input.trim()) return;
 
-        const userMessage = { sender: "user", text: input };
+        const userMessage = { role: "user", content: input };
         setMessages((msgs) => [...msgs, userMessage]);
+        const currentInput = input;
         setInput("");
         setLoading(true);
 
         try {
+            const systemPrompt = {
+                role: "system",
+                content: `You are a helpful and friendly health assistant for VitalNest, a health and wellness app. Your goal is to provide safe, general, and encouraging information.
+
+                **IMPORTANT INSTRUCTIONS:**
+                - NEVER give medical advice, diagnoses, or prescriptions.
+                - ALWAYS include a disclaimer to consult a healthcare professional for medical concerns.
+                - Keep responses concise, positive, and easy to understand.
+                - If asked about serious symptoms (e.g., chest pain, difficulty breathing), immediately advise seeking emergency medical help.
+                - Your knowledge is for informational and educational purposes only.
+
+                **TOPICS YOU CAN DISCUSS:**
+                - General wellness and healthy lifestyle tips.
+                - Basic nutrition and healthy eating guidelines.
+                - Exercise, fitness, and stretching information.
+                - Sleep hygiene and stress management techniques.
+                - Mental health awareness and coping strategies (without being a therapist).`
+            };
+
+            // Build conversation history excluding the initial greeting
+            const conversationHistory = messages.filter(msg => 
+                msg.content !== "Hello! I'm VitalNest's health assistant. I can help with general health tips, nutrition, exercise, and wellness. What's on your mind?"
+            );
+
             const response = await fetch(API_URL, {
                 method: "POST",
-                headers:
-                {
+                headers: {
                     "Content-Type": "application/json",
-                    Authorization: `Bearer ${API_KEY}`,
+                    "Authorization": `Bearer ${API_KEY}`,
                 },
                 body: JSON.stringify({
-                    model: "gpt-3.5-turbo",
-                    messages: [
-                        ...messages.map((m) => ({
-                            role: m.sender === "user" ? "user" : "assistant",
-                            content: m.text,
-                        })),
-                        { role: "user", content: input },
-                    ],
+                    model: "llama-3.1-8b-instant",
+                    messages: [systemPrompt, ...conversationHistory, userMessage],
+                    temperature: 0.7,
+                    max_tokens: 512,
                 }),
             });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(`API Error: ${errorData.error?.message || response.statusText}`);
+            }
+
             const data = await response.json();
-            const botReply =
-                data.choices?.[0]?.message?.content || "Sorry, I didn't understand that.";
-            setMessages((msgs) => [...msgs, { sender: "bot", text: botReply }]);
+            const botReply = data.choices[0]?.message?.content || "I'm sorry, I had trouble generating a response. Please try again.";
+
+            setMessages((msgs) => [...msgs, { role: "assistant", content: botReply.trim() }]);
+
         } catch (err) {
-            setMessages((msgs) => [
-                ...msgs,
-                { sender: "bot", text: "Error: Unable to get response." },
-            ]);
+            setMessages((msgs) => [...msgs, { role: "assistant", content: `Error: ${err.message}` }]);
         }
         setLoading(false);
     };
 
     return (
         <div className="chat-container">
-            <h2 className="chat-title">AI Assistant</h2>
+            <h2 className="chat-title">🌱 VitalNest Health Assistant</h2>
             <div className="chat-box">
                 {messages.map((msg, idx) => (
                     <div
                         key={idx}
                         className={`chat-message ${
-                            msg.sender === "user" ? "user-message" : "bot-message"
+                            msg.role === "user" ? "user-message" : "bot-message"
                         }`}
                     >
-                        <b>{msg.sender === "user" ? "You" : "Bot"}:</b> {msg.text}
+                        <b>{msg.role === "user" ? "You" : "Health Assistant"}:</b> 
+                        <div style={{ marginTop: '4px', whiteSpace: 'pre-line' }}>
+                            {msg.content}
+                        </div>
                     </div>
                 ))}
-                {loading && <div className="typing-indicator">Bot is typing...</div>}
+                {loading && <div className="typing-indicator">Health Assistant is thinking... 💭</div>}
             </div>
             <form onSubmit={sendMessage} className="chat-form">
                 <input
@@ -73,7 +100,7 @@ function Bot() {
                     onChange={(e) => setInput(e.target.value)}
                     disabled={loading}
                     className="chat-input"
-                    placeholder="Type your message..."
+                    placeholder="Ask about health tips, nutrition, exercise..."
                 />
                 <button
                     type="submit"
@@ -83,6 +110,12 @@ function Bot() {
                     Send
                 </button>
             </form>
+            <div className="health-disclaimer" style={{ 
+                background: '#fff5a4', padding: '12px', borderRadius: '8px', 
+                margin: '10px 0', border: '1px solid #4d7554', fontSize: '12px'
+            }}>
+                <strong>🏥 Medical Disclaimer:</strong> This AI provides general health information for educational purposes only. It cannot diagnose conditions or replace professional medical advice.
+            </div>
         </div>
     );
 }
