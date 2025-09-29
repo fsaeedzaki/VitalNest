@@ -6,6 +6,7 @@ import Welcome from "./pages/Welcome.jsx";
 import './App.css';
 import Tips from "./pages/Tips.jsx";
 import DonationPage from "./pages/donation.jsx";
+import Bot from "./components/AI assistant.jsx";
 function App (){
   return(
     
@@ -18,7 +19,7 @@ function App (){
           <Link to="/problems"> Problems </Link>
           <Link to="/tips"> Tips </Link>
           <Link to="/donate"> Donate </Link>
-
+          <Link to="/bot"> AI Assistant </Link>
           {/* <Link to="/About"> About </Link> */}
           {/* Add more navigation links here */}
         </nav>
@@ -31,6 +32,7 @@ function App (){
             <Route path="/problems" element={<Problems/>}/>
             <Route path="/tips" element={<Tips/>} />
             <Route path="*" element={<Navigate to="/"/>}/>
+            <Route path="/bot" element={<Bot/>}/>
             {/* <Route path="/About" element={<About/>}/> */}
             {/* Add more routes here */}
           </Routes>
