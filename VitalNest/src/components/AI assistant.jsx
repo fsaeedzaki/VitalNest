@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../styles/ai.css";
 const API_URL = "https://api.groq.com/openai/v1/chat/completions";
 const API_KEY = "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";
 
