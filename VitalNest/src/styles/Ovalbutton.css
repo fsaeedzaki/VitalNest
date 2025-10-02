@@ -15,7 +15,7 @@
     justify-content: center;
     text-decoration: #4d7554;
     -webkit-text-fill-color: #4d7554;
-    margin: 10px;
+    margin: 20px;
 
 } 
 .info-btn .default{
@@ -26,7 +26,6 @@
 .info-btn .hover-text {
     position: absolute;
     opacity: 0;
-
     font-size: 20px;
     font-family: 'Merriweather', serif;
     text-decoration: #25482c;
@@ -39,7 +38,8 @@
    border-color: #325a3a;        
    border-radius:  45%;  
    transition: all 0.3s  ease; 
-   background-color: #fffacf;   
+   background-color: #fffacf;
+
 }
 .info-btn:hover .default{
     align-items: flex-start;
