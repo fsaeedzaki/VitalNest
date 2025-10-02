@@ -42,7 +42,8 @@
 
 }
 .info-btn:hover .default{
-    align-items: flex-start;
+    justify-items: center;
+
 }
 .info-btn:hover .hover-text{
     opacity: 1;
