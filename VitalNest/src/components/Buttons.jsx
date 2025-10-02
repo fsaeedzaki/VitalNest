@@ -50,7 +50,7 @@ export default function Buttons() {
   ];
 
   return (
-    <main className="buttons_container">
+    <main className="buttons_container widthMax">
       <div className="sidebar">
         {data.map((item, index) => (
           <div key={index} className="sidebar-item">
@@ -65,7 +65,7 @@ export default function Buttons() {
 
             {openIndex === index && (
               <div className="sidebar-content">
-                <TipButton name={item.name} desc={item.desc} />
+                <TipButton desc={item.desc} />
               </div>
             )}
           </div>

@@ -20,7 +20,7 @@ function Problems() {
         <OvalButton name="Physical" desc="Physical Illness 
         affects the body and its systems, it appears on the body in more than one forms - like (diabetes, asthema, cancer)."/>
         <OvalButton name="Psychosomatic Illness" desc="Psychosomatic Illness
-            It's a Physical symptom caused or worsened by mental or emotional factors like (stress, tension, headaches) ."/>
+            It's a Physical symptom caused or worsened by mental or emotional factors like (stress, tension, headaches)."/>
          <OvalButton name="Social" desc="Social Illness
             It's caused by external problems like relationships, social functioning, or spread through society - (addiction, sregma related conditions)."/>
       </div>

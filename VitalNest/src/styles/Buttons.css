@@ -1,3 +1,6 @@
+.widthMax {
+  width: 90%;
+}
 
 .sidebar {
   color: #fffef3;
@@ -30,13 +33,15 @@
 
 .sidebar-btn:hover {
   background: #fffbd9;
-  box-shadow: 0 0 10px #2b4630;
+  box-shadow: 0 0 10px #2b4630;    
+  border-color: #365c3d;       
 }
 
-.sidebar-content {
+.sidebar-content {  
   background: #7aab83;
-  padding: 0.75rem;
-  border-radius: 0 0 16px 16px;
+  -webkit-text-fill-color: #fffef3;
+  padding: 1rem;
+  border-radius: 0 0 14px 14px;
   gap: 0.5rem;
 }
 

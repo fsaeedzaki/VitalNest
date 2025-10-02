@@ -24,7 +24,6 @@
     font-family: 'Archivo Black', sans-serif; 
 }
 .info-btn .hover-text {
-    position: absolute;
     opacity: 0;
     font-size: 20px;
     font-family: 'Merriweather', serif;
@@ -32,11 +31,11 @@
     -webkit-text-fill-color: #2e5536;
 }
 .info-btn:hover {
-   transform: scale(1.05);      
-   width: 250px;             
-   height: 500px;    
+   transform: scale(1.12);      
+   width: 275px;             
+   height: 350px;    
    border-color: #365c3d;        
-   border-radius:  45%;  
+   border-radius: 70px;
    transition: all 0.3s  ease; 
    background-color: #fffbd9;
 
