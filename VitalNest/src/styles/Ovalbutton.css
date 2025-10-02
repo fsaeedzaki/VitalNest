@@ -4,7 +4,7 @@
 .info-btn {
     position: relative;
     border: 2px solid #4d7554;
-    background-color: #fffacf;
+    background-color: #f8f2c0;
     font-size: 20px;
     width: 210px;             
     height: 90px;
@@ -29,16 +29,16 @@
     font-size: 20px;
     font-family: 'Merriweather', serif;
     text-decoration: #25482c;
-    -webkit-text-fill-color: #2c5334;
+    -webkit-text-fill-color: #2e5536;
 }
 .info-btn:hover {
    transform: scale(1.05);      
    width: 250px;             
    height: 500px;    
-   border-color: #325a3a;        
+   border-color: #365c3d;        
    border-radius:  45%;  
    transition: all 0.3s  ease; 
-   background-color: #fffacf;
+   background-color: #fffbd9;
 
 }
 .info-btn:hover .default{

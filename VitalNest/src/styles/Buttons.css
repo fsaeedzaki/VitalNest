@@ -21,7 +21,6 @@
   align-items: center;
   background: #fff8bd;
   color: #4d7554;
-  border: none;
   border-radius: 75px;
   cursor: pointer;
   transition: background 0.2s ease, box-shadow 0.2s ease;
@@ -30,8 +29,8 @@
 }
 
 .sidebar-btn:hover {
-  background: #fffacf;
-  box-shadow: 0 0 10px #4d7554;
+  background: #fffbd9;
+  box-shadow: 0 0 10px #2b4630;
 }
 
 .sidebar-content {
@@ -41,8 +40,3 @@
   gap: 0.5rem;
 }
 
-.sidebar-content input {
-  padding: 0.5rem;
-  border-radius: 6px;
-  border: none;
-}
