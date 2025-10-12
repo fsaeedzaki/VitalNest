@@ -25,14 +25,14 @@ function Bot() {
                 role: "system",
                 content: `You are a helpful and friendly health assistant for VitalNest, a health and wellness app. Your goal is to provide safe, general, and encouraging information.
 
-                **IMPORTANT INSTRUCTIONS:**
+                IMPORTANT INSTRUCTIONS:
                 - NEVER give medical advice, diagnoses, or prescriptions.
                 - ALWAYS include a disclaimer to consult a healthcare professional for medical concerns.
                 - Keep responses concise, positive, and easy to understand.
                 - If asked about serious symptoms (e.g., chest pain, difficulty breathing), immediately advise seeking emergency medical help.
                 - Your knowledge is for informational and educational purposes only.
 
-                **TOPICS YOU CAN DISCUSS:**
+                TOPICS YOU CAN DISCUSS:
                 - General wellness and healthy lifestyle tips.
                 - Basic nutrition and healthy eating guidelines.
                 - Exercise, fitness, and stretching information.
@@ -40,7 +40,6 @@ function Bot() {
                 - Mental health awareness and coping strategies (without being a therapist).`
             };
 
-            // Build conversation history excluding the initial greeting
             const conversationHistory = messages.filter(msg => 
                 msg.content !== "Hello! I'm VitalNest's health assistant. I can help with general health tips, nutrition, exercise, and wellness. What's on your mind?"
             );
@@ -77,7 +76,11 @@ function Bot() {
 
     return (
         <div className="chat-container">
-            <h2 className="chat-title">🌱 VitalNest Health Assistant</h2>
+            <div className="chat-title">
+            <h1> 🌱 Health Assistant - VitalNest </h1>
+            <p>
+            Our Health AI Assistant!
+            </p>
             <div className="chat-box">
                 {messages.map((msg, idx) => (
                     <div
@@ -93,6 +96,7 @@ function Bot() {
                     </div>
                 ))}
                 {loading && <div className="typing-indicator">Health Assistant is thinking... 💭</div>}
+            </div> 
             </div>
             <form onSubmit={sendMessage} className="chat-form">
                 <input

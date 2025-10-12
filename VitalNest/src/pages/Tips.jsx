@@ -8,7 +8,7 @@ export default function Tips(){
         <div className="card">
           <div className = "background"/>
           <div className="myAnimation"/>
-          <h1>Health tips from VitalNest</h1>
+          <h1>🌱 Health tips - VitalNest</h1>
           <p>
            Learn to take care of your body with our Health tips! What's your issue today?
           </p>

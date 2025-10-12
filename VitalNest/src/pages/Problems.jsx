@@ -8,7 +8,7 @@ function Problems() {
       <section className="problems__content">
         <div class="buttons"></div>
          <div className="problems__card">
-          <h1>Types of Health issues - VitalNest</h1>
+          <h1>🌱 Types of Health issues - VitalNest</h1>
           <p>
           Learn how to identify your illnesses with VitalNest.
           </p>
