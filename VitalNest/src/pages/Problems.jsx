@@ -19,7 +19,7 @@ function Problems() {
             affect thoughts, emotions and behavior also can be shown as (depression, anxiety). To get better you need help like parents support - and if the situation is more critical, you can definitely consult a doctor."/>
         <OvalButton name="Physical" desc="Physical Illness 
         affects the body and its systems, it appears on the body in more than one forms - like (diabetes, asthema, cancer)."/>
-        <OvalButton name="Psychosomatic Illness" desc="Psychosomatic Illness
+        <OvalButton name="Psychosomatic" desc="Psychosomatic Illness
             It's a Physical symptom caused or worsened by mental or emotional factors like (stress, tension, headaches)."/>
          <OvalButton name="Social" desc="Social Illness
             It's caused by external problems like relationships, social functioning, or spread through society - (addiction, sregma related conditions)."/>

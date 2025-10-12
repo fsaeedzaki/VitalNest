@@ -2,7 +2,7 @@ function Homepage({image,i,p}){
     return(
         <div className = "header">
         <div>
-            <h1>Welcome to VitalNest!</h1>
+            <h1>🌱 Welcome to VitalNest!</h1>
            <p>Here you can start your journey of being a healthier version of yourself. We believe that good health is the foundation of a better life, and our mission is to provide you with the care, knowledge, and support you deserve! </p>
         </div>
         <img className= "img1" src={image}/>

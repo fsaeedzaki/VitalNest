@@ -54,22 +54,7 @@ body {
     color: #333;
     font-size: 20px;
 }
-.input-box input:focus i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 120px;
-    color: #1f5d86; 
-}
-.wrapper .remember-forgot {
-    font-size: 14px;
-    color: #333;
-    font-weight: 400;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+
 .wrapper .remember-forgot label input {
     margin-right: 3px;
 }
