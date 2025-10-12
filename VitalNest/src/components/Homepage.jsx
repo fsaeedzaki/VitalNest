@@ -7,12 +7,12 @@ function Homepage({image,i,p}){
         </div>
         <img className= "img1" src={image}/>
         <div>
-            <h1>About Us?</h1>
-              <p>At VitalNest,
+            <h1>🌱 About Us?</h1>
+              <p>In VitalNest,
                 we are committed to delivering reliable medical information,personalized health resources, and access to expert care.Whether you're here to learn more about your health,find professional guidance,or simply take small steps 
                 towards a healthier lifestyle, our platform is designed with you in mind</p>
             <img className= "img1" src={i}/>
-            <h1>Core Values Highlight (CTIS)</h1>
+            <h1>🌱 Core Values Highlight (CTIS)</h1>
             <h4>Compassion: Putting patients and users first</h4>
             <h4>Trust: Delivering Accurate and up-to-date medical information</h4>
             <h4>Innovation: Using Technology to Make Healthcare more Accessible</h4>
